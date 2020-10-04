@@ -183,16 +183,6 @@ GET '/questions?page=(page number)'
 }
 ```
 
-DELETE '/questions/<int:question_id>'
-- Delete a questions
-- Request Arguments: question_id
-```
-{
-    'success': True,
-    'deleted_question':question_id
-}
-```
-
 POST '/questions'
 - Post a new Question to specific category
 - Request Date: [question:string, answer:string, difficulty:int, category:string]
