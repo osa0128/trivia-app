@@ -1,7 +1,14 @@
 Full Stack Trivia API Backend
+
+
 Getting Started
+
+
 Installing Dependencies
+
+
 Python 3.7
+
 
 Follow instructions to install the latest version of python for your platform in the python docs
 Virtual Enviornment
