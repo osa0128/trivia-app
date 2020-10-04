@@ -31,6 +31,8 @@ Key Dependencies
 
 Database Setup
 
+
+
 With Postgres running, restore a database using the trivia.psql file provided. From the backend folder in terminal run:
 
 psql trivia < trivia.psql
@@ -65,7 +67,11 @@ One note before you delve into your tasks: for each endpoint you are expected to
 Endpoints GET '/categories' GET ... POST ... DELETE ...
 API
 
+
+
 GET '/categories'
+
+
 
     Fetches a dictionary of categories in which the keys are the ids and the value is the corresponding string of the category
     Request Arguments: None
@@ -83,7 +89,11 @@ GET '/categories'
   "success": true
 }
 
+
+
 GET '/questions?page=(page number)'
+
+
 
     Fetches a paginated dictionary of questions of all category
     Request Arguments (optional): page number
@@ -174,7 +184,11 @@ GET '/questions?page=(page number)'
   "total_questions": 19
 }
 
+
+
 DELETE '/questions/int:question_id'
+
+
 
     Delete a questions
     Request Arguments: question_id
@@ -185,6 +199,8 @@ DELETE '/questions/int:question_id'
 }
 
 POST '/questions'
+
+
 
     Post a new Question to specific category
     Request Date: [question:string, answer:string, difficulty:int, category:string]
@@ -214,7 +230,11 @@ POST '/questions/searchresult'
   "total_questions": 1
 }
 
+
+
 GET '/categories/int:category_id/questions'
+
+
 
     GET all questions for specific category
     Request Arguments: int:category_id
@@ -255,7 +275,11 @@ GET '/categories/int:category_id/questions'
   "total_questions": 4
 }
 
+
+
 POST '/quizzes'
+
+
 
     Post a new quiz with random questions with no dublicated questions
     Request Date: array:previous_questions, quiz_category: int:id
@@ -272,7 +296,11 @@ POST '/quizzes'
   "success": true
 }
 
+
+
 Testing
+
+
 
 To run the tests, run
 
